@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+</head>
+<body>
+
+    <ul>
+        {% for p in post_list %}
+        <li>
+            {{ p.title }}
+            {{ p.body }}
+            {{ p.created_at }}
+            {{ p.status }}
+        </li>
+    </ul>
+    
+</body>
+</html>
